@@ -4,10 +4,10 @@
 source_file="/var/log/syslog"
 destination_dir="./"
 
-# Create a timestamp for the filename
+# Create a timestamp
 timestamp=$(date +"%Y%m%d%H%M%S")
 
-# Build the destination filename with the timestamp
+# Build the destination filename
 destination_file="${destination_dir}syslog_${timestamp}.log"
 
 # Copy the source file to the destination with the timestamped filename
